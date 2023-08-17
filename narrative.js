@@ -27,32 +27,48 @@ class Narrative {
       { //index 3
       text: "While hacking the Monsanto mainframe, you're caught while hacking and are thrown into a cell",
         choices: [
-          {text: "Accept their tech and plan a joint sabotage mission?", arrayIndex: 5},
-          {text: "Decline and decide to gather more allies from the city?", arrayIndex: 6 }
+          {text: "Accept their tech and plan a joint sabotage mission?", arrayIndex: 7},
+          {text: "Decline and decide to gather more allies from the city?", arrayIndex: 8 }
         ]
       },
       { //index 4
       text: "While looking for evidence at the facility, you find incriminating documents about their operations",
         choices: [
-          {text: "Leak it to the media immediately?", narrayIndex: 5},
+          {text: "Leak it to the media immediately?", arrayIndex: 5},
           {text: "Share it with the resistance?", arrayIndex: 6 }
         ]
       },
       { //index 5
+      text: "While laying low, .you and eco-resistance plan a mass protest against Monsanto ",
+        choices: [
+          {text: "Accept their tech and plan a joint sabotage mission?", arrayIndex: 7},
+          {text: "Decline and decide to gather more allies from the city?", arrayIndex: 8 }
+        ]
+      },
+      { //index 6
+      text: "While looking for evidence at the facility, you find incriminating documents about their operations",
+        choices: [
+          {text: "Leak it to the media immediately?", arrayIndex: 5},
+          {text: "Share it with the resistance?", arrayIndex: 6 }
+        ]
+      },
+      { //index 7
       text: "While pulling off the sabotage operation, you succeed but gather lots of attention",
         choices: [
           {text: "Lay low?", arrayIndex: 5},
           {text: "Prepare for Retaliation", arrayIndex: 6 }
         ]
       },
-      { //index 6
+      { //index 8
       text: "While looking for evidence at the facility, you find incriminating documents about their operations",
         choices: [
           {text: "Accept their tech and plan a joint sabotage mission?", arrayIndex: 5},
-          {text: "Decline and decide to gather more allies from the city?", narrayIndex: 6 }
+          {text: "Decline and decide to gather more allies from the city?", arrayIndex: 6 }
         ]
       },
     ];
     this.currentStep = 0;
   }
 }
+
+class 
