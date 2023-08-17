@@ -17,17 +17,6 @@ class Narrative {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 // class AdventureGame {
 //   constructor(playerName) {
 //     this.playerName = playerName;
