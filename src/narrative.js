@@ -12,25 +12,6 @@ class Narrative {
 
 
 
-
-
-
-
-
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> 0e689dc (WIP: business logic.)
 // class AdventureGame {
 //   constructor(playerName) {
 //     this.playerName = playerName;
