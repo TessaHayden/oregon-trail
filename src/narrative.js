@@ -2,8 +2,9 @@ export default class Narrative {
   constructor(storyData) {
       this.storyData = storyData;
       this.currentStep = 0;
-    }
-  
+      this.isGameEnded = false;
+  }
+
     getCurrentStep() {
       return this.storyData[this.currentStep];
     }
@@ -13,9 +14,9 @@ export default class Narrative {
       const nextStepIndex = step.choices[choiceIndex].arrayIndex;
 
       if(typeof nextStepIndex !== 'undefined') {
-        this.currentStep = nextStepIndex
-      }else {
-        //end of story
+        this.currentStep = nextStepIndex;
+      } else if (step.choices[choiceIndex].ending) {
+        this.isGameEnded = true;
       }
     }
 
@@ -23,6 +24,14 @@ export default class Narrative {
     this.currentStep = 0;
   }
 }
+
+    // makeChoice(choiceIndex) {
+    //   if (arrayIndex[gameover]) {
+    //     getGameEnding(gameover)
+    //   } else {
+    //   this.currentStep = nextStepIndex;
+    //   return this.getCurrentStep();
+    // }
 
 
 
