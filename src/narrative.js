@@ -1,14 +1,33 @@
-//Export statement
-class Narrative {
+export default class Narrative {
   constructor(storyData) {
-    this.storyData = storyData;
-    this.currentStep = 0;
+    constructor(storyData) {
+      this.storyData = storyData;
+      this.currentStep = 0;
+    }
+  
+    getCurrentStep() {
+      return this.storyData[this.currentStep];
+    }
+    
+    makeChoice(choiceIndex) {
+      this.currentStep = userChoice;
+      return this.storyData[this.userChoice];
+    }
   }
+  
 
-  getCurrentStep() {
-    return this.storyData[this.currentStep];
+  initalizeGame() {
+
   }
 }
+
+
+
+
+// UI updated with text and choices;
+// User makes a choice;
+// this.currentStep = user choice;
+
 
 
 
