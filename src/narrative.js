@@ -2,7 +2,6 @@ export default class Narrative {
   constructor(storyData) {
       this.storyData = storyData;
       this.currentStep = 0;
-      this.cumulativeValue = 0;
       this.isGameEnded = false;
   }
 
@@ -13,7 +12,6 @@ export default class Narrative {
     makeChoice(choiceIndex) {
       const step = this.storyData[this.currentStep];
       const nextStepIndex = step.choices[choiceIndex].arrayIndex;
-      const choiceValue = step.choices[choiceIndex]?. value || 1;
 
       if(typeof nextStepIndex !== 'undefined') {
         this.currentStep = nextStepIndex;
@@ -29,14 +27,26 @@ export default class Narrative {
   }
 
   calculateEnding() {
-    if (
-}
+    let array = []
+    if (array === this.storyData[0].choices[0] && this.storyData[1].choices[0] && this.storyData[3].choices[0]) {
+      return storyData[7];
+    } else if (array === this.storyData[0].choices[0] && this.storyData[1].choices[0] && this.storyData[3].choices[0]) {
+      return storyData[7];
+    } else if (array === this.storyData[0].choices[0] && this.storyData[1].choices[0] && this.storyData[3].choices[0]) {
+      return storyData[7];
+    } else if (array === this.storyData[0].choices[0] && this.storyData[1].choices[0] && this.storyData[3].choices[0]) {
+      return storyData[7];
+    } else if (array === this.storyData[0].choices[0] && this.storyData[1].choices[0] && this.storyData[3].choices[0]) {
+      return storyData[7];
+    } else if (array === this.storyData[0].choices[0] && this.storyData[1].choices[0] && this.storyData[3].choices[0]) {
+      return storyData[7];
+    } else if (array === this.storyData[0].choices[0] && this.storyData[1].choices[0] && this.storyData[3].choices[0]) {
+      return storyData[7];
+    } else if (array === this.storyData[0].choices[0] && this.storyData[1].choices[0] && this.storyData[3].choices[0]) {
+      return storyData[7];
 
 
-class StoryPrompt{
-  points = 0;
 
-  constructor(choice) {
     this.storyData = [
       { //index 0
         text: "Corporate Takedown You are Alex, a young eco-warrior standing against the environmentally destructive Monsanto Corporation. Start: You're in the heart of the city, watching as smog clouds the skyline. Monsanto's logo is everywhere,",
