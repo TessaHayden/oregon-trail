@@ -1,6 +1,5 @@
 export default class Narrative {
   constructor(storyData) {
-    constructor(storyData) {
       this.storyData = storyData;
       this.currentStep = 0;
     }
@@ -10,14 +9,18 @@ export default class Narrative {
     }
     
     makeChoice(choiceIndex) {
-      this.currentStep = userChoice;
-      return this.storyData[this.userChoice];
+      const step = this.storyData[this.currentStep];
+      const nextStepIndex = step.choices[choiceIndex].arrayIndex;
+
+      if(typeof nextStepIndex !== 'undefined') {
+        this.currentStep = nextStepIndex
+      }else {
+        //end of story
+      }
     }
-  }
-  
 
   initalizeGame() {
-
+    this.currentStep = 0;
   }
 }
 

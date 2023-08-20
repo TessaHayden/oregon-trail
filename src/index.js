@@ -9,7 +9,8 @@ class Narrative {
         choices: [
           {text: " Sneak into a Monsanto facility to gather information?", arrayIndex: 1 },
           {text: "Seek out the eco-resistance in the nearby forest?", arrayIndex: 2 }
-        ]
+        ],
+        status: 0
       },
       { //index 1
         text: "Sneak into Monsanto facility: You manage to bypass security and enter the facility, but it's crawling with guards.",
@@ -66,6 +67,14 @@ class Narrative {
           {text: "Accept their tech and plan a joint sabotage mission?", arrayIndex: 5},
           {text: "Decline and decide to gather more allies from the city?", arrayIndex: 6 }
         ]
+      },
+      { //index 9 -- winning scenario
+      text: "While looking for evidence at the facility, you find incriminating documents about their operations",
+        choices: [
+          {text: "Accept their tech and plan a joint sabotage mission?", arrayIndex: 5},
+          {text: "Decline and decide to gather more allies from the city?", arrayIndex: 6 }
+        ],
+        status: 1
       },
     ];
     this.currentStep = 0;
