@@ -15,13 +15,17 @@ export default class Narrative {
 
       if(typeof nextStepIndex !== 'undefined') {
         this.currentStep = nextStepIndex;
-      } else if (step.choices[choiceIndex].ending) {
+      } else if (step.choices[choiceIndex]?.ending) {
         this.isGameEnded = true;
       }
     }
 
   initalizeGame() {
     this.currentStep = 0;
+  }
+
+  getEndingStepIndex(ending) {
+    if (end === )
   }
 }
 
