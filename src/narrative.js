@@ -58,7 +58,7 @@ class StoryPrompt{
       { //index 0
         text: "EcoGuard: Corporate Takedown You are Alex, a young eco-warrior standing against the environmentally destructive Monsanto Corporation. Start: You're in the heart of the city, watching as smog clouds the skyline. Monsanto's logo is everywhere,",
         choices: [
-          {text: " Sneak into a Monsanto facility to gather information?", arrayIndex: 1 },
+          {text: "Sneak into a Monsanto facility to gather information?", arrayIndex: 1 },
           {text: "Seek out the eco-resistance in the nearby forest?", arrayIndex: 2 }
         ]
       },
@@ -72,15 +72,15 @@ class StoryPrompt{
       { //index 2
         text: "Seek out the eco-resistance: You meet a group of environmentalists. They offer you tools and gadgets to help",
         choices: [
-          {text: "Lay low and avoid confrontation?", arrayIndex: 5 },
-          {text: "Prepare for an imminent Monsanto retaliation?", arrayIndex: 6 }
+          {text: "Accept their tech and plan a joint sabotage mission", arrayIndex: 5 },
+          {text: "Decline and decide to gather more allies from the city?", arrayIndex: 6 }
         ]
       },
-      { //index 3
+      { //index 3 from 1[0]
       text: "While hacking the Monsanto mainframe, you're caught while hacking and are thrown into a cell",
         choices: [
-          {text: "Accept their tech and plan a joint sabotage mission?", arrayIndex: 7},
-          {text: "Decline and decide to gather more allies from the city?", arrayIndex: 8 }
+          {text: "Try to escape and risk being caught", arrayIndex: 7},
+          {text: "Try ?", arrayIndex: 8 }
         ]
       },
       { //index 4
@@ -90,14 +90,14 @@ class StoryPrompt{
           {text: "Share it with the resistance?", arrayIndex: 6 }
         ]
       },
-      { //index 5
-      text: "While laying low, .you and eco-resistance plan a mass protest against Monsanto ",
+      { //index 5 from 2[0]
+      text: "Sabotage Mission, .you and eco-resistance plan a mass protest against Monsanto ",
         choices: [
           {text: "Accept their tech and plan a joint sabotage mission?", arrayIndex: 7},
           {text: "Decline and decide to gather more allies from the city?", arrayIndex: 8 }
         ]
       },
-      { //index 6
+      { //index 6 from 2[1]
       text: "While looking for evidence at the facility, you find incriminating documents about their operations",
         choices: [
           {text: "Leak it to the media immediately?", arrayIndex: 5},
