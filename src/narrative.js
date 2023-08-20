@@ -28,25 +28,8 @@ export default class Narrative {
     this.currentStep = 0;
   }
 
-  calculateEnding(cumulativeValue) {
-    if (cumulativeValue  === 11010) {
-      return firstEnding; //1st ending
-    } else if (cumulativeValue === 11015) {
-      return secondEnding; //2nd ending
-    } else if (cumulativeValue === 11020) {
-      return thirdEnding;
-    } else if (cumulativeValue === 11025) {
-      return fourthEnding;
-    } else if (cumulativeValue === 12010) {
-      return fifthEnding;
-    } else if (cumulativeValue === 12015) {
-      return sixEnding;
-    } else if (cumulativeValue === 12020) {
-      return seventhEnding;
-    } else if (cumulativeValue === 12025) {
-      return eightEnding;
-    }
-  }
+  calculateEnding() {
+    if (
 }
 
 
@@ -94,8 +77,7 @@ class StoryPrompt{
       text: "Sabotage Mission",
         choices: [
           {text: "Lay low and avoid confrontation", arrayIndex: 11},
-          {text: "Prepare for an imminent Monsanto retaliation?"
-          arrayIndex: 12}
+          {text: "Prepare for an imminent Monsanto retaliation?", arrayIndex: 12}
         ]
       },
       { //index 6 from 2[1]
@@ -106,39 +88,29 @@ class StoryPrompt{
         ]
       },
       { //index 7 
-      text: "While pulling off the sabotage operation, you succeed but gather lots of attention",
-        choices: [
-          {text: "Lay low?", arrayIndex: 5},
-          {text: "Prepare for Retaliation", arrayIndex: 6 }
-        ]
+      text: "You're recaptured but your story becomes public, inspiring a movement against Monsanto. ",
       },
       { //index 8
-      text: "While looking for evidence at the facility, you find incriminating documents about their operations",
-        choices: [
-          {text: "Accept their tech and plan a joint sabotage mission?", arrayIndex: 5},
-          {text: "Decline and decide to gather more allies from the city?", arrayIndex: 6 }
-        ]
+      text: "An eco-resistance member rescues you, and together you plan Monsanto's downfall."
       },
+
       { //index 9
-      text: "While Leaking it to the media immediately",
-        choices: [
-          {text: "Lay low?", arrayIndex: 5},
-          {text: "Prepare for Retaliation", arrayIndex: 6 }
-        ]
+      text: "While Leaking it to the media immediately, The media is compromised; Monsanto suppresses the news. You're forced to rethink.",
       },
       { //index 10
-      text: "While Share it with the resistance for a strategic reveal?",
-        choices: [
-          {text: "Accept their tech and plan a joint sabotage mission?", arrayIndex: 5},
-          {text: "Decline and decide to gather more allies from the city?", arrayIndex: 6 }
-        ]
+      text: "he eco-resistance strategically exposes Monsanto, leading to mass protests.",
       },
-      { //index 9 -- example winning scenario
-      text: "Congratulations!  The diversion works. The smaller group retrieves undeniable evidence against Monsanto, leading to their eventual legal takedown",
-        choices: [
-          //there are no choices because the game ends here
-        ],
-        gameover: 1
+      { //index 11
+        text: "Monsanto launches a smear campaign against the resistance, but your low profile keeps you safe.",
+      },
+      { //index 12
+        text: "The world watches as eco-warriors clash with corporate goons.",
+      },
+      { //index 13
+        text: "The protest forces Monsanto into the public eye, starting a global movement.",
+      },
+      { //index 14
+        text: "The diversion works. The smaller group retrieves undeniable evidence against Monsanto, leading to their eventual legal takedown.",
       },
     ];
     this.currentStep = 0;
