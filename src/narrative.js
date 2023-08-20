@@ -28,23 +28,24 @@ export default class Narrative {
 
   calculateEnding() {
     let array = []
-    if (array === this.storyData[0].choices[0] && this.storyData[1].choices[0] && this.storyData[3].choices[0]) {
+    if (array === this.storyData[0].choices[0] && this.storyData[1].choices[0] && this.storyData[2].choices[0]) {
       return storyData[7];
-    } else if (array === this.storyData[0].choices[0] && this.storyData[1].choices[0] && this.storyData[3].choices[0]) {
-      return storyData[7];
-    } else if (array === this.storyData[0].choices[0] && this.storyData[1].choices[0] && this.storyData[3].choices[0]) {
-      return storyData[7];
-    } else if (array === this.storyData[0].choices[0] && this.storyData[1].choices[0] && this.storyData[3].choices[0]) {
-      return storyData[7];
-    } else if (array === this.storyData[0].choices[0] && this.storyData[1].choices[0] && this.storyData[3].choices[0]) {
-      return storyData[7];
-    } else if (array === this.storyData[0].choices[0] && this.storyData[1].choices[0] && this.storyData[3].choices[0]) {
-      return storyData[7];
-    } else if (array === this.storyData[0].choices[0] && this.storyData[1].choices[0] && this.storyData[3].choices[0]) {
-      return storyData[7];
-    } else if (array === this.storyData[0].choices[0] && this.storyData[1].choices[0] && this.storyData[3].choices[0]) {
-      return storyData[7];
-
+    } else if (array === this.storyData[0].choices[1] && this.storyData[1].choices[0] && this.storyData[2].choices[1]) {
+      return storyData[8];
+    } else if (array === this.storyData[0].choices[0] && this.storyData[1].choices[0] && this.storyData[2].choices[0]) {
+      return storyData[9];
+    } else if (array === this.storyData[0].choices[0] && this.storyData[1].choices[0] && this.storyData[2].choices[0]) {
+      return storyData[10];
+    } else if (array === this.storyData[0].choices[1] && this.storyData[2].choices[0] && this.storyData[3].choices[0]) {
+      return storyData[11];
+    } else if (array === this.storyData[0].choices[1] && this.storyData[1].choices[0] && this.storyData[2].choices[1]) {
+      return storyData[12];
+    } else if (array === this.storyData[0].choices[1] && this.storyData[1].choices[1] && this.storyData[2].choices[0]) {
+      return storyData[13];
+    } else if (array === this.storyData[0].choices[1] && this.storyData[1].choices[1] && this.storyData[2].choices[1]) {
+      return storyData[14];
+    }
+  }
 
 
     this.storyData = [
@@ -124,8 +125,7 @@ export default class Narrative {
       },
     ];
     this.currentStep = 0;
-  }
-}
+
 
     // makeChoice(choiceIndex) {
     //   if (arrayIndex[gameover]) {
