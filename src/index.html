@@ -8,17 +8,22 @@
   <div class="container">
     <h1>Ecoguard</h1>
     <div id="story-text">
-      <!-- story prompts here -->
+      <!-- story text here -->
+    </div>
+    <div id="story-prompt">
+      <!-- story prompt here -->
     </div>
     <div id="options">
       <form>
-        <input type="radio" name="story-options" id="q1a" value="a" />
-        <input type="radio" name="story-options" id="q1b" value="b" />
-        <input type="radio" name="story-options" id="q1b" value="b" />
-        <button type="submit">Submit</button>
+        <label id="optionA" for="qa"></label>
+        <input type="button" id="qa" value="???">
+        <label id="optionB" for="qb"></label>
+        <input type="button" id="qb" value="???">
       </form>
+    </div>
+    <div class="animate__animated animate__bounce">
+      <img id="animate" src="./assets/images/Farmer.png" />
     </div>
   </div>
 </body>
-
 </html>
