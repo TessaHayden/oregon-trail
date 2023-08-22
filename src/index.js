@@ -12,7 +12,9 @@ function animateCSS() {
 
 function showOption(event) {
   event.preventDefault();
-  
+  let narrative = new Narrative();
+  let userChoice = narrative.makeChoice(radioValue);
+  console.log(userChoice);
   let textElement = document.querySelector("#story-text");
   const promptElementA = document.querySelector("#prompt-a");
   promptElementA.innerText =
@@ -24,10 +26,10 @@ function showOption(event) {
   const radioValue = document.querySelector(
     "input[name='story-options']:checked"
   ).value;
-  if (radioValue === "a") {
+  if (radioValue === "0") {
     textElement.innerText = "hi";
   }
-  if (radioValue === "b") {
+  if (radioValue === "1") {
     textElement.innerText = "narrativeVal";
   }
 }
