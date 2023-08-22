@@ -89,31 +89,26 @@ export default class Narrative {
       ];
   }
   
-  printCurrentStep() {
-    console.log(this.storyData[this.currentStep]);
+  getCurrentStep() {
     const currentStepContent = this.storyData[this.currentStep];
-    console.log(`The current step is ${this.currentStep}`)
-    console.log(`The current step is ${currentStepContent}`)
-    // console.log(`The current step is ${this.currentStep}`)
-    
-    
+  
     for (const key in currentStepContent) {
-      // if (key === 'choices') {
-      //   currentStepContent[key].forEach()
-      // }
-      console.log(`${key}: ${currentStepContent[key]}`);
+      if (key === 'choices') {
+        currentStepContent[key].forEach()
+      }
+      return currentStepContent;
     }
   };
 
   makeChoice() {
-    let userChoice = prompt('please input choice 0 or 1');
+    // let userChoice = prompt('please input choice 0 or 1'); // will be the object that is returned from UI
     this.currentStep = this.storyData[this.currentStep].choices[userChoice].arrayIndex;
   };
 }
 
-story = new Narrative;
-story.printCurrentStep();
-story.makeChoice();
+// story = new Narrative;
+// story.printCurrentStep();
+// story.makeChoice();
 
 
 
