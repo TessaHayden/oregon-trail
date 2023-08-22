@@ -12,3 +12,7 @@ p {
 .story-text {
   font-size: larger;
 }
+
+.animate__bounce {
+  margin-top: 5%;
+}

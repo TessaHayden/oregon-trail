@@ -6,21 +6,24 @@
   <div class="container">
     <h1>Ecoguard</h1>
     <div id="story-text">
-      <!-- story text here -->
+      EcoGuard: Corporate Takedown You are Alex, a young eco-warrior standing against the environmentally destructive
+      Monsanto Corporation. Start: You're in the heart of the city, watching as smog clouds the skyline. Monsanto's logo is
+      everywhere,
     </div>
     <div id="story-prompt">
       <!-- story prompt here -->
     </div>
     <div id="options">
       <form>
-        <p id="prompt-a"></p>
-        <label for="qa">Option A:</label>
-        <input type="radio" name="story-options" id="qa" value="a"/>
-        <p id="prompt-b"></p>
-        <label for="qb">Option B:</label>
-        <input type="radio" name="story-options" id="qb" value="b"/>
+        <label id="prompt-a" for="qa">" Sneak into a Monsanto facility to gather information?":</label>
+        <input type="radio" name="story-options" id="qa" value="0"/>
+        <label for="qb" id="prompt-b">"Seek out the eco-resistance in the nearby forest?"</label>
+        <input type="radio" name="story-options" id="qb" value="1"/>
         <button type="submit">Submit</button>
       </form>
+    </div>
+    <div class="animate__animated animate__bounce">
+      <img src="assets/images/Farmer.png" alt="farmer pic" width="200" id="animate"/>
     </div>
   </div>
 </body>
