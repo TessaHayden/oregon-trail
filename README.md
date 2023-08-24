@@ -1,28 +1,38 @@
-  "scripts": {
-    "build": "webpack --mode=development",
-    "start": "npm run build && webpack-dev-server --open --mode=development",
-    "lint": "eslint src --ext .js",
-    "test": "jest --coverage"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.18.6",
-    "@babel/plugin-transform-modules-commonjs": "^7.18.6",
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^3.6.0",
-    "eslint": "^8.18.0",
-    "eslint-webpack-plugin": "^2.7.0",
-    "file-loader": "^6.2.0",
-    "html-loader": "^1.3.2",
-    "html-webpack-plugin": "^4.5.2",
-    "jest": "^24.9.0",
-    "style-loader": "^1.3.0",
-    "webpack": "4.46.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "3.11.3"
-  },
-  "dependencies": {
-    "bootstrap": "^5.2.3"
-  }
+# _EcoGuard_
+
+#### By **Kayla Weaver, Elena Rosa, Jordan Kennedy, Tessa Hayden, Jessica Hattig, and Aaron Brown **
+
+#### Intermediate JavaScript, First Team WeeK Project: A choose-your-own-adventure game for lovers of plants using html, css, javascript and tooling including: npm, webpack, jest, eslint & babel.
+
+## Technologies Used
+
+* HTML
+* CSS
+* JavaScript
+* Git
+* npm
+* Webpack
+* Eslint
+* Babel
+* Google Chrome
+* Animate Framework
+
+## Description
+
+EcoGuard is an engaging web-based interactive story application that puts players in the shoes of Alex, a young eco-warrior, as they navigate a compelling narrative centered around environmental activism. The project showcases the power of choice-driven storytelling allowing players to make decisions that shape the course of the story's progressions and ultimately determine one of eight possible endings.
+
+## Setup Requirements
+
+* clone the repository **https://github.com/TessaHayden/oregon-trail.git** in the terminal
+* install npm **npm install**
+* build the project **npm run build**
+* start the development server **npm run start**
+* open the project through a browser using address:  **http://localhost:8080/**
+
+## Known Bugs
+* Image animation is still under development. 
+
+## License
+MIT License
+
+Copyright (c) August 23rd, 2023 Kayla Weaver, Elena Rosa, Jordan Kennedy, Tessa Hayden, Jessica Hattig, and Aaron Brown.
