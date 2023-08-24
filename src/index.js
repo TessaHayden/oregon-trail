@@ -1,7 +1,7 @@
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.css";
-import "animate.css";
+import "animate.css/animate.min.css";
 import Narrative from "./narrative";
 
 let narrative = new Narrative();
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const cityImage = document.getElementById("city-image");
 
   cityImage.addEventListener("click", function () {
-      cityImage.style.display = "hidden";
+    cityImage.style.display = "none";
   });
 });
 
@@ -49,7 +49,7 @@ function updateStoryDisplay() {
 }
 
 function showOption(event) {
-  event.preventDefault()
+  event.preventDefault();
   const radioValue = parseInt(document.querySelector("input[name='story-options']:checked").value);
   narrative.makeChoice(radioValue);
   updateStoryDisplay();

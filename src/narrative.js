@@ -6,10 +6,10 @@ export default class Narrative {
     this.storyData = [
       {
         //index 0
-        text: "Corporate Takedown You are Alex, a young eco-warrior standing against the environmentally destructive Monsanto Corporation. Start: You're in the heart of the city, watching as smog clouds the skyline. Monsanto's logo is everywhere,",
+        text: "Corporate Takedown You are Alex, a young eco-warrior standing against the environmentally destructive Monsantanato Corporation. Start: You're in the heart of the city, watching as smog clouds the skyline. Monsantanato's logo is everywhere,",
         choices: [
           {
-            text: "Sneak into a Monsanto facility to gather information?",
+            text: "Sneak into a Monsantanato facility to gather information?",
             arrayIndex: 1,
           },
           {
@@ -20,7 +20,7 @@ export default class Narrative {
       },
       {
         //index 1 from 0{0}
-        text: "Sneak into Monsanto facility: You manage to bypass security and enter the facility, but it's crawling with guards.",
+        text: "Sneak into Monsantanato facility: You manage to bypass security and enter the facility, but it's crawling with guards.",
         choices: [
           {
             text: "Try to hack into their mainframe for evidence?",
@@ -45,7 +45,7 @@ export default class Narrative {
       },
       {
         //index 3 from 1[0]
-        text: "While hacking the Monsanto mainframe, you're caught while hacking and are thrown into a cell",
+        text: "While hacking the Monsantanato mainframe, you're caught while hacking and are thrown into a cell",
         choices: [
           { text: "Try to escape and risk being caught", arrayIndex: 7 },
           { text: "Wait for an opportunity and ally to help?", arrayIndex: 8 },
@@ -68,7 +68,7 @@ export default class Narrative {
         choices: [
           { text: "Lay low and avoid confrontation", arrayIndex: 11 },
           {
-            text: "Prepare for an imminent Monsanto retaliation?",
+            text: "Prepare for an imminent Monsantanato retaliation?",
             arrayIndex: 12,
           },
         ],
@@ -77,37 +77,37 @@ export default class Narrative {
         //index 6 from 2[1]
         text: "As you gather more allies from the city, do you",
         choices: [
-          { text: "Plan a mass protest against Monsanto?", arrayIndex: 13 },
+          { text: "Plan a mass protest against Monsantanato?", arrayIndex: 13 },
           {
-            text: "Use the crowd as a diversion while a smaller group infiltrates Monsanto?",
+            text: "Use the crowd as a diversion while a smaller group infiltrates Monsantanato?",
             arrayIndex: 14,
           },
         ],
       },
       {
         //index 7
-        text: "You're recaptured but your story becomes public, inspiring a movement against Monsanto. ",
+        text: "You're recaptured but your story becomes public, inspiring a movement against Monsantanato. ",
         gameOver: "The Game is Now Over",
       },
       {
         //index 8
-        text: "An eco-resistance member rescues you, and together you plan Monsanto's downfall.",
+        text: "An eco-resistance member rescues you, and together you plan Monsantanato's downfall.",
         gameOver: "The Game is Now Over",
       },
 
       {
         //index 9
-        text: "While Leaking it to the media immediately, The media is compromised; Monsanto suppresses the news. You're forced to rethink.",
+        text: "While Leaking it to the media immediately, The media is compromised; Monsantanato suppresses the news. You're forced to rethink.",
         gameOver: "The Game is Now Over",
       },
       {
         //index 10
-        text: "he eco-resistance strategically exposes Monsanto, leading to mass protests.",
+        text: "The eco-resistance strategically exposes Monsantanato, leading to mass protests.",
         gameOver: "The Game is Now Over",
       },
       {
         //index 11
-        text: "Monsanto launches a smear campaign against the resistance, but your low profile keeps you safe.",
+        text: "Monsantanato launches a smear campaign against the resistance, but your low profile keeps you safe.",
         gameOver: "The Game is Now Over",
       },
       {
@@ -117,12 +117,12 @@ export default class Narrative {
       },
       {
         //index 13
-        text: "The protest forces Monsanto into the public eye, starting a global movement.",
+        text: "The protest forces Monsantanato into the public eye, starting a global movement.",
         gameOver: "The Game is Now Over",
       },
       {
         //index 14
-        text: "The diversion works. The smaller group retrieves undeniable evidence against Monsanto, leading to their eventual legal takedown.",
+        text: "The diversion works. The smaller group retrieves undeniable evidence against Monsantanato, leading to their eventual legal takedown.",
         gameOver: "The Game is Now Over",
       },
     ];
